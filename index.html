@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dana Smith | Senior Freelance Web Developer Portfolio</title>
+  <meta name="description" content="Professional Freelance Web Developer & UI/UX Specialist. High-converting, accessible, ultra-fast web development services for startups and businesses.">
+  <meta name="keywords" content="Freelance Web Developer, HTML5, CSS3, JavaScript, DEPI Portfolio, UI/UX Design, Web Optimization">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="bg-glow-orb orb-1"></div>
+  <div class="bg-glow-orb orb-2"></div>
+  <div class="bg-glow-orb orb-3"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+        <span>Dana<span style="color: var(--accent-primary);">.dev</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero"         class="nav-link active" data-en="Home"       data-ar="الرئيسية">Home</a>
+        <a href="#usp"          class="nav-link"        data-en="USP"        data-ar="ميزتي">USP</a>
+        <a href="#about"        class="nav-link"        data-en="About"      data-ar="عني">About</a>
+        <a href="#services"     class="nav-link"        data-en="Services"   data-ar="خدماتي">Services</a>
+        <a href="#skills"       class="nav-link"        data-en="Skills"     data-ar="مهاراتي">Skills</a>
+        <a href="#timeline"     class="nav-link"        data-en="Experience" data-ar="خبراتي">Experience</a>
+        <a href="#projects"     class="nav-link"        data-en="Projects"   data-ar="مشاريعي">Projects</a>
+        <a href="#testimonials" class="nav-link"        data-en="Reviews"    data-ar="آراء العملاء">Reviews</a>
+        <a href="#contact"      class="nav-link"        data-en="Contact"    data-ar="تواصل معي">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="lang-toggle" id="global-lang-btn" aria-label="Switch to Arabic" title="تحويل للعربية / Switch to Arabic">
+          <span style="font-weight: 700; font-size: 0.85rem;">AR</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm hide-mobile" data-en="Hire Me" data-ar="وظّفني">Hire Me</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 01. Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span data-en="Available for New Freelance Projects" data-ar="متاح لمشاريع فريلانس جديدة">Available for New Freelance Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-en="Hello 👋, I am" data-ar="مرحباً 👋، أنا">Hello 👋, I am</span><br>
+            <span class="gradient-text">Dana Smith</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            <strong data-en="Senior Freelance Web Developer & UI Specialist." data-ar="مطوّر ويب فريلانس وأخصائي واجهات مستخدم.">Senior Freelance Web Developer &amp; UI Specialist.</strong>
+            <span data-en=" Building modern, ultra-fast, accessible web applications that transform visitors into loyal clients." data-ar=" أبني تطبيقات ويب حديثة وسريعة واحترافية تحوّل الزوار إلى عملاء وفيّين."> Building modern, ultra-fast, accessible web applications that transform visitors into loyal clients.</span>
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i>
+              <span data-en="Explore My Work" data-ar="استعرض أعمالي">Explore My Work</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</span>
+            </a>
+            <a href="#contact" class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-download"></i>
+              <span data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-avatar-wrap">
+          <div class="avatar-frame">
+            <img src="assets/images/avatar.jpg" alt="Dana Smith - Web Developer Portfolio" class="avatar-img">
+          </div>
+          <div class="floating-experience-card">
+            <div class="exp-icon"><i class="fa-solid fa-award"></i></div>
+            <div>
+              <div class="exp-num" data-en="5+ Years" data-ar="+5 سنوات">5+ Years</div>
+              <div class="exp-text" data-en="Freelance Excellence" data-ar="تميّز في الفريلانس">Freelance Excellence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USP Section -->
+    <section id="usp" class="usp-section container">
+      <div class="usp-card">
+        <div class="usp-header">
+          <div class="usp-title-badge">
+            <i class="fa-solid fa-bullseye"></i>
+            <span data-en="My Unique Selling Proposition (USP)" data-ar="عرض القيمة الفريد (USP)">My Unique Selling Proposition (USP)</span>
+          </div>
+          <div class="usp-lang-switch">
+            <button class="usp-lang-btn active" id="usp-btn-en">English</button>
+            <button class="usp-lang-btn" id="usp-btn-ar">العربية</button>
+          </div>
+        </div>
+
+        <div id="usp-content-en">
+          <p class="usp-statement">
+            "I help ambitious startups &amp; businesses achieve 3x higher user engagement and sales conversions through custom, ultra-fast, and accessible web solutions."
+          </p>
+          <div class="usp-alt-box">
+            <i class="fa-solid fa-bolt" style="color: var(--accent-amber); margin-right: 6px;"></i>
+            <strong>Punchy Alternative:</strong> "Transforming complex business ideas into pixel-perfect, high-converting digital web experiences with zero compromise on performance."
+          </div>
+        </div>
+
+        <div id="usp-content-ar" style="display: none;" dir="rtl">
+          <p class="usp-statement rtl-text">
+            "أساعد الشركات الناشئة وأصحاب الأعمال على زيادة تفاعل العملاء ومضاعفة المبيعات من خلال بناء مواقع إلكترونية سريعة، مبتكرة، ومخصصة للنمو المستدام."
+          </p>
+          <div class="usp-alt-box rtl-text">
+            <i class="fa-solid fa-bolt" style="color: var(--accent-amber); margin-left: 6px;"></i>
+            <strong>النسخة الأكثر تحفيزاً:</strong> "تحويل الأفكار المعقدة إلى واجهات رقمية احترافية وسريعة للغاية تحقق أفضل تجربة للمستخدم."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. About Me Section -->
+    <section id="about" class="section container">
+      <div class="about-grid">
+        <div class="glass-card">
+          <div class="section-tag">
+            <i class="fa-solid fa-user"></i>
+            <span data-en="About Me" data-ar="عن نفسي">About Me</span>
+          </div>
+          <h2 class="section-title" style="margin-bottom: 1.25rem;">
+            <span data-en="Crafting Digital Solutions That" data-ar="صياغة حلول رقمية">Crafting Digital Solutions That</span>
+            <span class="gradient-text" data-en=" Drive Results" data-ar=" تحقق نتائج"> Drive Results</span>
+          </h2>
+          <p class="about-text" data-en="My passion for web development began over 5 years ago when I built my first interactive site. Since then, I've had the privilege of collaborating with over 40+ global clients, startups, and agencies." data-ar="بدأ شغفي بتطوير الويب منذ أكثر من 5 سنوات عندما أنشأت أول موقع تفاعلي لي. منذ ذلك الحين، تشرّفت بالتعاون مع أكثر من 40 عميلاً وشركة ناشئة ووكالة حول العالم.">
+            My passion for web development began over 5 years ago when I built my first interactive site. Since then, I've had the privilege of collaborating with over 40+ global clients, startups, and agencies.
+          </p>
+          <p class="about-text" data-en="As a proud graduate of the Digital Egypt Pioneers Initiative (DEPI) Freelancing Track, I focus not just on writing clean, semantic HTML and CSS, but on creating clear value for my clients: faster load times, intuitive user experiences, and measurable ROI." data-ar="بوصفي خريجاً فخوراً لمبادرة رواد مصر الرقمية (DEPI)، لا أكتفي بكتابة كود HTML وCSS نظيف، بل أركّز على تقديم قيمة حقيقية لعملائي: سرعة تحميل أعلى، تجربة مستخدم سلسة، وعائد استثمار قابل للقياس.">
+            As a proud graduate of the <strong>Digital Egypt Pioneers Initiative (DEPI) Freelancing Track</strong>, I focus not just on writing clean, semantic HTML and CSS, but on creating clear value for my clients: faster load times, intuitive user experiences, and measurable ROI.
+          </p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card glass-card">
+            <div class="stat-number" data-target="5">5+</div>
+            <div class="stat-label" data-en="Years Experience" data-ar="سنوات خبرة">Years Experience</div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-number" data-target="45">45+</div>
+            <div class="stat-label" data-en="Projects Completed" data-ar="مشروع مكتمل">Projects Completed</div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-number" data-target="99">99%</div>
+            <div class="stat-label" data-en="Client Satisfaction" data-ar="رضا العملاء">Client Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. Services Section -->
+    <section id="services" class="section container">
+      <div class="section-title-wrap">
+        <div class="section-tag">
+          <i class="fa-solid fa-cubes"></i>
+          <span data-en="Offered Services" data-ar="الخدمات المقدمة">Offered Services</span>
+        </div>
+        <h2 class="section-title">
+          <span data-en="Tailored Web Solutions For Your" data-ar="حلول ويب مخصصة لـ">Tailored Web Solutions For Your</span>
+          <span class="gradient-text" data-en=" Growth" data-ar=" نموّك"> Growth</span>
+        </h2>
+        <p class="section-description" data-en="Clear, outcome-focused web services tailored to help your brand stand out in a competitive digital market." data-ar="خدمات ويب واضحة وموجّهة نحو النتائج، مصمّمة لمساعدة علامتك التجارية على التميّز في السوق الرقمي.">
+          Clear, outcome-focused web services tailored to help your brand stand out in a competitive digital market.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card glass-card">
+          <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+          <h3 class="service-title" data-en="Frontend Web Development" data-ar="تطوير واجهات الويب">Frontend Web Development</h3>
+          <p class="service-desc" data-en="Building responsive, pixel-perfect web applications using clean HTML5, CSS3, and JavaScript ES6+ standards." data-ar="بناء تطبيقات ويب متجاوبة ودقيقة بالبكسل باستخدام HTML5 وCSS3 وJavaScript ES6+ وفق أعلى المعايير.">
+            Building responsive, pixel-perfect web applications using clean HTML5, CSS3, and JavaScript ES6+ standards.
+          </p>
+        </div>
+
+        <div class="service-card glass-card">
+          <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3 class="service-title" data-en="Responsive & Mobile Design" data-ar="التصميم المتجاوب والجوّال">Responsive &amp; Mobile Design</h3>
+          <p class="service-desc" data-en="Ensuring your website looks and performs flawlessly on all screen sizes, from mobile phones to 4K desktop displays." data-ar="ضمان ظهور موقعك وأدائه بشكل مثالي على جميع أحجام الشاشات، من الجوّال حتى شاشات 4K.">
+            Ensuring your website looks and performs flawlessly on all screen sizes, from mobile phones to 4K desktop displays.
+          </p>
+        </div>
+
+        <div class="service-card glass-card">
+          <div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <h3 class="service-title" data-en="UI/UX Design & Conversion" data-ar="تصميم UI/UX وزيادة التحويل">UI/UX Design &amp; Conversion</h3>
+          <p class="service-desc" data-en="Designing user-centric visual interfaces that guide visitors towards taking action and increasing conversion rates." data-ar="تصميم واجهات بصرية تتمحور حول المستخدم توجّه الزوار لاتخاذ القرار ورفع معدلات التحويل.">
+            Designing user-centric visual interfaces that guide visitors towards taking action and increasing conversion rates.
+          </p>
+        </div>
+
+        <div class="service-card glass-card">
+          <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+          <h3 class="service-title" data-en="Performance & SEO Tuning" data-ar="تحسين الأداء وSEO">Performance &amp; SEO Tuning</h3>
+          <p class="service-desc" data-en="Optimizing site speed, Core Web Vitals, semantic markup, and accessibility to boost search engine rankings." data-ar="تحسين سرعة الموقع ومؤشرات Core Web Vitals والترميز الدلالي وإمكانية الوصول لرفع تصنيفات محركات البحث.">
+            Optimizing site speed, Core Web Vitals, semantic markup, and accessibility to boost search engine rankings.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. Skills & Tech Stack Section -->
+    <section id="skills" class="section container">
+      <div class="section-title-wrap">
+        <div class="section-tag">
+          <i class="fa-solid fa-layer-group"></i>
+          <span data-en="Technical Skills" data-ar="المهارات التقنية">Technical Skills</span>
+        </div>
+        <h2 class="section-title">
+          <span data-en="My Capabilities &" data-ar="قدراتي و">My Capabilities &amp;</span>
+          <span class="gradient-text" data-en=" Tech Stack" data-ar=" أدواتي"> Tech Stack</span>
+        </h2>
+        <p class="section-description" data-en="A blend of engineering mastery and modern design standards to craft robust web products." data-ar="مزيج من الإتقان الهندسي ومعايير التصميم الحديثة لبناء منتجات ويب متينة.">
+          A blend of engineering mastery and modern design standards to craft robust web products.
+        </p>
+      </div>
+
+      <div class="skills-container">
+        <div class="glass-card">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span data-en="Core Competencies" data-ar="الكفاءات الأساسية">Core Competencies</span>
+          </h3>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span data-en="HTML5 & Semantic Markup" data-ar="HTML5 والترميز الدلالي">HTML5 &amp; Semantic Markup</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span data-en="CSS3, Flexbox & CSS Grid" data-ar="CSS3، Flexbox وCSS Grid">CSS3, Flexbox &amp; CSS Grid</span>
+              <span>92%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span data-en="JavaScript ES6+ & DOM Logic" data-ar="JavaScript ES6+ ومنطق DOM">JavaScript ES6+ &amp; DOM Logic</span>
+              <span>88%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span data-en="Web Performance & SEO" data-ar="أداء الويب وتحسين SEO">Web Performance &amp; SEO</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <span data-en="Tools & Ecosystem" data-ar="الأدوات والبيئة">Tools &amp; Ecosystem</span>
+          </h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.25rem;"
+             data-en="Technologies, build systems, and design tools used in daily workflow:"
+             data-ar="التقنيات وأنظمة البناء وأدوات التصميم المستخدمة يوميًا:">
+            Technologies, build systems, and design tools used in daily workflow:
+          </p>
+          <div class="tech-badges">
+            <span class="tech-badge"><i class="fa-brands fa-html5" style="color: #e34f26;"></i> HTML5</span>
+            <span class="tech-badge"><i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i> CSS3</span>
+            <span class="tech-badge"><i class="fa-brands fa-js" style="color: #f7df1e;"></i> JavaScript</span>
+            <span class="tech-badge"><i class="fa-brands fa-git-alt" style="color: #f05032;"></i> Git &amp; GitHub</span>
+            <span class="tech-badge"><i class="fa-brands fa-figma" style="color: #f24e1e;"></i> Figma UI</span>
+            <span class="tech-badge"><i class="fa-solid fa-universal-access"></i> WCAG</span>
+            <span class="tech-badge"><i class="fa-solid fa-bolt"></i> Lighthouse</span>
+            <span class="tech-badge"><i class="fa-solid fa-mobile"></i> <span data-en="Mobile First" data-ar="Mobile First">Mobile First</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. Experience & Education Timeline -->
+    <section id="timeline" class="section container">
+      <div class="section-title-wrap">
+        <div class="section-tag">
+          <i class="fa-solid fa-timeline"></i>
+          <span data-en="Career Journey" data-ar="مسيرتي المهنية">Career Journey</span>
+        </div>
+        <h2 class="section-title">
+          <span data-en="Education &" data-ar="التعليم و">Education &amp;</span>
+          <span class="gradient-text" data-en=" Work History" data-ar=" تاريخ العمل"> Work History</span>
+        </h2>
+      </div>
+
+      <div class="timeline-grid">
+        <div class="glass-card">
+          <h3 class="timeline-column-title">
+            <i class="fa-solid fa-graduation-cap" style="color: var(--accent-primary);"></i>
+            <span data-en="Education & Credentials" data-ar="التعليم والمؤهلات">Education &amp; Credentials</span>
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2024</div>
+              <h4 class="timeline-role" data-en="DEPI Freelancing Track Specialist" data-ar="متخصص مسار الفريلانس - DEPI">DEPI Freelancing Track Specialist</h4>
+              <div class="timeline-company" data-en="Digital Egypt Pioneers Initiative (رواد مصر الرقمية)" data-ar="مبادرة رواد مصر الرقمية (DEPI)">Digital Egypt Pioneers Initiative (رواد مصر الرقمية)</div>
+              <p class="timeline-desc" data-en="Comprehensive training on freelance business management, portfolio building, client negotiation, and advanced frontend engineering." data-ar="تدريب شامل على إدارة أعمال الفريلانس، بناء المحافظ الاحترافية، التفاوض مع العملاء، وهندسة الواجهات الأمامية المتقدمة.">
+                Comprehensive training on freelance business management, portfolio building, client negotiation, and advanced frontend engineering.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2019 - 2023</div>
+              <h4 class="timeline-role" data-en="B.Sc. Computer Science & Software Engineering" data-ar="بكالوريوس علوم الحاسب وهندسة البرمجيات">B.Sc. Computer Science &amp; Software Engineering</h4>
+              <div class="timeline-company" data-en="Salford University / Higher Institute" data-ar="جامعة سالفورد / المعهد العالي">Salford University / Higher Institute</div>
+              <p class="timeline-desc" data-en="Graduated with Honors. Specialized in Web Systems, Human-Computer Interaction (HCI), and Software Design Patterns." data-ar="تخرّج بمرتبة الشرف. تخصّص في أنظمة الويب، تفاعل الإنسان مع الحاسب (HCI)، وأنماط تصميم البرمجيات.">
+                Graduated with Honors. Specialized in Web Systems, Human-Computer Interaction (HCI), and Software Design Patterns.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3 class="timeline-column-title">
+            <i class="fa-solid fa-briefcase" style="color: var(--accent-secondary);"></i>
+            <span data-en="Work Experience" data-ar="الخبرة العملية">Work Experience</span>
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot" style="background: var(--accent-secondary); box-shadow: 0 0 10px var(--accent-secondary);"></div>
+              <div class="timeline-date" data-en="2022 - Present" data-ar="2022 - الآن">2022 - Present</div>
+              <h4 class="timeline-role" data-en="Senior Freelance Web Developer" data-ar="مطوّر ويب فريلانس أول">Senior Freelance Web Developer</h4>
+              <div class="timeline-company" data-en="Independent / Upwork & Direct Clients" data-ar="مستقل / Upwork وعملاء مباشرون">Independent / Upwork &amp; Direct Clients</div>
+              <p class="timeline-desc" data-en="Delivered 40+ custom web solutions for international clients in e-commerce, SaaS, and creative industries with 100% job success score." data-ar="سلّمت أكثر من 40 حلاً ويب مخصصاً لعملاء دوليين في التجارة الإلكترونية وSaaS والصناعات الإبداعية بنسبة نجاح 100%.">
+                Delivered 40+ custom web solutions for international clients in e-commerce, SaaS, and creative industries with 100% job success score.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot" style="background: var(--accent-secondary); box-shadow: 0 0 10px var(--accent-secondary);"></div>
+              <div class="timeline-date">2021 - 2022</div>
+              <h4 class="timeline-role" data-en="Frontend Web Specialist" data-ar="متخصص واجهات ويب أمامية">Frontend Web Specialist</h4>
+              <div class="timeline-company" data-en="Apex Digital Studio" data-ar="Apex Digital Studio">Apex Digital Studio</div>
+              <p class="timeline-desc" data-en="Developed responsive client websites, led design system creation, and optimized page load speed by 50% across portfolio projects." data-ar="طوّرت مواقع عملاء متجاوبة، قدتُ إنشاء نظام تصميم، وحسّنت سرعة تحميل الصفحات بنسبة 50% عبر مشاريع المحفظة.">
+                Developed responsive client websites, led design system creation, and optimized page load speed by 50% across portfolio projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. Projects Section -->
+    <section id="projects" class="section container">
+      <div class="section-title-wrap">
+        <div class="section-tag">
+          <i class="fa-solid fa-briefcase"></i>
+          <span data-en="Selected Projects" data-ar="مشاريع مختارة">Selected Projects</span>
+        </div>
+        <h2 class="section-title">
+          <span data-en="Featured Work &" data-ar="أعمال مميزة و">Featured Work &amp;</span>
+          <span class="gradient-text" data-en=" Case Studies" data-ar=" دراسات الحالة"> Case Studies</span>
+        </h2>
+        <p class="section-description" data-en="Demonstrating measurable business impact, sleek design, and clean architecture." data-ar="إبراز التأثير التجاري القابل للقياس، التصميم الأنيق، والبنية البرمجية النظيفة.">
+          Demonstrating measurable business impact, sleek design, and clean architecture.
+        </p>
+      </div>
+
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all"      data-en="All Projects"    data-ar="كل المشاريع">All Projects</button>
+        <button class="filter-btn"        data-filter="ecommerce" data-en="E-Commerce"       data-ar="التجارة الإلكترونية">E-Commerce</button>
+        <button class="filter-btn"        data-filter="saas"      data-en="SaaS & Apps"      data-ar="SaaS وتطبيقات">SaaS &amp; Apps</button>
+        <button class="filter-btn"        data-filter="agency"    data-en="Creative Agency"  data-ar="وكالات إبداعية">Creative Agency</button>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card glass-card" data-category="ecommerce">
+          <div class="project-img-wrap">
+            <img src="assets/images/project1.jpg" alt="AURA Fashion Storefront" class="project-img">
+            <div class="project-overlay">
+              <button class="btn btn-primary btn-sm view-case-study" data-project="1">
+                <i class="fa-solid fa-eye"></i>
+                <span data-en="View Case Study" data-ar="عرض دراسة الحالة">View Case Study</span>
+              </button>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category" data-en="E-Commerce Platform" data-ar="منصة تجارة إلكترونية">E-Commerce Platform</span>
+            <h3 class="project-title" data-en="AURA Fashion Storefront" data-ar="متجر AURA للأزياء">AURA Fashion Storefront</h3>
+            <p class="project-desc" data-en="High-converting luxury online fashion boutique with ultra-fast search, custom cart drawer, and seamless mobile UX." data-ar="بوتيك أزياء فاخر عبر الإنترنت بمعدل تحويل مرتفع، بحث فائق السرعة، درج سلة مخصص، وتجربة جوّال سلسة.">
+              High-converting luxury online fashion boutique with ultra-fast search, custom cart drawer, and seamless mobile UX.
+            </p>
+            <div class="project-metrics">
+              <i class="fa-solid fa-chart-line"></i>
+              <span data-en="+140% Conversion Rate | 98/100 Lighthouse" data-ar="+140% معدل تحويل | 98/100 Lighthouse">+140% Conversion Rate | 98/100 Lighthouse</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="saas">
+          <div class="project-img-wrap">
+            <img src="assets/images/project2.jpg" alt="Pulse SaaS Analytics Suite" class="project-img">
+            <div class="project-overlay">
+              <button class="btn btn-primary btn-sm view-case-study" data-project="2">
+                <i class="fa-solid fa-eye"></i>
+                <span data-en="View Case Study" data-ar="عرض دراسة الحالة">View Case Study</span>
+              </button>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category" data-en="SaaS Web Application" data-ar="تطبيق ويب SaaS">SaaS Web Application</span>
+            <h3 class="project-title" data-en="Pulse SaaS Analytics Suite" data-ar="لوحة تحليلات Pulse SaaS">Pulse SaaS Analytics Suite</h3>
+            <p class="project-desc" data-en="Glassmorphic real-time data dashboard featuring interactive widgets, revenue charts, and dark theme UI layout." data-ar="لوحة بيانات زجاجية في الوقت الفعلي تضم أدوات تفاعلية، مخططات إيرادات، وواجهة بالوضع الداكن.">
+              Glassmorphic real-time data dashboard featuring interactive widgets, revenue charts, and dark theme UI layout.
+            </p>
+            <div class="project-metrics">
+              <i class="fa-solid fa-bolt"></i>
+              <span data-en="Load Time < 0.8s | 45% Lower Bounce Rate" data-ar="وقت تحميل أقل من 0.8 ثانية | معدل ارتداد أقل بـ 45%">Load Time &lt; 0.8s | 45% Lower Bounce Rate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="agency">
+          <div class="project-img-wrap">
+            <img src="assets/images/project3.jpg" alt="Neon Agency Web Experience" class="project-img">
+            <div class="project-overlay">
+              <button class="btn btn-primary btn-sm view-case-study" data-project="3">
+                <i class="fa-solid fa-eye"></i>
+                <span data-en="View Case Study" data-ar="عرض دراسة الحالة">View Case Study</span>
+              </button>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category" data-en="Agency & Branding" data-ar="وكالة وهوية بصرية">Agency &amp; Branding</span>
+            <h3 class="project-title" data-en="Neon Agency Web Experience" data-ar="تجربة ويب وكالة Neon">Neon Agency Web Experience</h3>
+            <p class="project-desc" data-en="Immersive agency portfolio website featuring smooth CSS scroll animations, dynamic dark gradient backgrounds, and responsive typography." data-ar="موقع محفظة وكالة غامر يضمّ حركات تمرير CSS سلسة، خلفيات متدرجة ديناميكية داكنة، وطباعة متجاوبة.">
+              Immersive agency portfolio website featuring smooth CSS scroll animations, dynamic dark gradient backgrounds, and responsive typography.
+            </p>
+            <div class="project-metrics">
+              <i class="fa-solid fa-trophy"></i>
+              <span data-en="Featured on WebDesignInspiration 2024" data-ar="مميّز على WebDesignInspiration 2024">Featured on WebDesignInspiration 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. Achievements Section -->
+    <section id="achievements" class="section container">
+      <div class="section-title-wrap">
+        <div class="section-tag">
+          <i class="fa-solid fa-medal"></i>
+          <span data-en="Recognition" data-ar="الاعتراف والتقدير">Recognition</span>
+        </div>
+        <h2 class="section-title">
+          <span data-en="Achievements &" data-ar="الإنجازات و">Achievements &amp;</span>
+          <span class="gradient-text" data-en=" Social Proof" data-ar=" الدليل الاجتماعي"> Social Proof</span>
+        </h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card">
+          <div class="achievement-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div>
+            <h3 class="achievement-title" data-en="DEPI Top Performer Award" data-ar="جائزة الأفضل أداءً في DEPI">DEPI Top Performer Award</h3>
+            <p class="achievement-desc" data-en="Recognized for outstanding technical excellence and project delivery in Digital Egypt Pioneers Initiative." data-ar="تم تكريمه للتميز التقني الاستثنائي وتسليم المشاريع في مبادرة رواد مصر الرقمية.">
+              Recognized for outstanding technical excellence and project delivery in Digital Egypt Pioneers Initiative.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievement-card glass-card">
+          <div class="achievement-icon"><i class="fa-solid fa-star"></i></div>
+          <div>
+            <h3 class="achievement-title" data-en="Top Rated Freelancer (Upwork)" data-ar="مستقل بتقييم أعلى (Upwork)">Top Rated Freelancer (Upwork)</h3>
+            <p class="achievement-desc" data-en="Maintained a 100% Job Success Score across 40+ client contracts worldwide." data-ar="حافظ على نسبة نجاح 100% عبر أكثر من 40 عقداً مع عملاء حول العالم.">
+              Maintained a 100% Job Success Score across 40+ client contracts worldwide.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievement-card glass-card">
+          <div class="achievement-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div>
+            <h3 class="achievement-title" data-en="Certified Speed Specialist" data-ar="متخصص معتمد في الأداء والسرعة">Certified Speed Specialist</h3>
+            <p class="achievement-desc" data-en="Web Vitals certification for optimizing sites to achieve perfect 95+ PageSpeed scores." data-ar="شهادة Web Vitals لتحسين المواقع وتحقيق نتائج PageSpeed أكثر من 95.">
+              Web Vitals certification for optimizing sites to achieve perfect 95+ PageSpeed scores.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09. Testimonials Section -->
+    <section id="testimonials" class="section container">
+      <div class="section-title-wrap">
+        <div class="section-tag">
+          <i class="fa-solid fa-comments"></i>
+          <span data-en="Client Reviews" data-ar="آراء العملاء">Client Reviews</span>
+        </div>
+        <h2 class="section-title">
+          <span data-en="What My Clients" data-ar="ما يقوله">What My Clients</span>
+          <span class="gradient-text" data-en=" Say" data-ar=" عملائي"> Say</span>
+        </h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card glass-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="quote" data-en='"Dana built our e-commerce platform ahead of deadline. The speed optimization alone increased our sales conversion rate by 140%. Extraordinary attention to detail!"' data-ar='"دانا بنت منصة التجارة الإلكترونية الخاصة بنا قبل الموعد المحدد. التحسين في السرعة وحده زاد معدل التحويل بنسبة 140%. اهتمام استثنائي بالتفاصيل!"'>
+            "Dana built our e-commerce platform ahead of deadline. The speed optimization alone increased our sales conversion rate by 140%. Extraordinary attention to detail!"
+          </p>
+          <div class="client-info">
+            <div>
+              <div class="client-name">Sarah Jenkins</div>
+              <div class="client-role" data-en="Founder, AURA Apparel UK" data-ar="مؤسسة، AURA Apparel UK">Founder, AURA Apparel UK</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="quote" data-en='"One of the best web developers I have hired on Upwork. Her clear communication, business-focused mindset, and technical skills made our SaaS launch smooth."' data-ar='"من أفضل مطوري الويب الذين استعنت بهم على Upwork. تواصلها الواضح وتفكيرها التجاري ومهاراتها التقنية جعلت إطلاق منصة SaaS سلساً."'>
+            "One of the best web developers I have hired on Upwork. Her clear communication, business-focused mindset, and technical skills made our SaaS launch smooth."
+          </p>
+          <div class="client-info">
+            <div>
+              <div class="client-name">Marcus Vance</div>
+              <div class="client-role" data-en="CTO, Pulse Analytics USA" data-ar="مدير تقني، Pulse Analytics USA">CTO, Pulse Analytics USA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="quote" data-en='"Dana turned our messy wireframes into a breathtaking responsive web experience. Highly professional, responsive, and creative!"' data-ar='"دانا حوّلت مخططاتنا المتشعبة إلى تجربة ويب متجاوبة رائعة. محترفة للغاية، سريعة الاستجابة، ومبدعة!"'>
+            "Dana turned our messy wireframes into a breathtaking responsive web experience. Highly professional, responsive, and creative!"
+          </p>
+          <div class="client-info">
+            <div>
+              <div class="client-name">Khaled Al-Mansoor</div>
+              <div class="client-role" data-en="Managing Director, Neon Agency Dubai" data-ar="المدير العام، وكالة Neon دبي">Managing Director, Neon Agency Dubai</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Contact & CTA Section -->
+    <section id="contact" class="section container">
+      <div class="section-title-wrap">
+        <div class="section-tag">
+          <i class="fa-solid fa-envelope"></i>
+          <span data-en="Let's Connect" data-ar="لنتواصل">Let's Connect</span>
+        </div>
+        <h2 class="section-title">
+          <span data-en="Ready to Start Your" data-ar="مستعد لبدء">Ready to Start Your</span>
+          <span class="gradient-text" data-en=" Project?" data-ar=" مشروعك؟"> Project?</span>
+        </h2>
+        <p class="section-description" data-en="Contact me today for a free project estimate or consultation. I usually reply within 2 hours." data-ar="تواصل معي اليوم لتقدير مجاني للمشروع أو استشارة. أردّ عادةً خلال ساعتين.">
+          Contact me today for a free project estimate or consultation. I usually reply within 2 hours.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="glass-card">
+          <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem;"
+              data-en="Contact Information" data-ar="معلومات التواصل">Contact Information</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;"
+             data-en="Have a project in mind or need expert web advice? Feel free to reach out via email or phone."
+             data-ar="هل لديك مشروع أو تحتاج مشورة خبير في الويب؟ تواصل معي بحرية عبر البريد أو الهاتف.">
+            Have a project in mind or need expert web advice? Feel free to reach out via email or phone.
+          </p>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="contact-label" data-en="Direct Email" data-ar="البريد الإلكتروني">Direct Email</div>
+                <div class="contact-val">dana.smith.dev@example.com</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="contact-label" data-en="Phone / WhatsApp" data-ar="هاتف / واتساب">Phone / WhatsApp</div>
+                <div class="contact-val">+20 100 123 4567</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <div class="contact-label" data-en="Location" data-ar="الموقع">Location</div>
+                <div class="contact-val" data-en="Cairo, Egypt (Global Remote)" data-ar="القاهرة، مصر (عمل عن بُعد عالمياً)">Cairo, Egypt (Global Remote)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control" id="form-name"
+                     data-placeholder-en="Your Name" data-placeholder-ar="اسمك الكريم"
+                     placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="form-email"
+                     data-placeholder-en="Your Email Address" data-placeholder-ar="بريدك الإلكتروني"
+                     placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="form-service" required>
+                <option value="" disabled selected data-en="Select Desired Service..." data-ar="اختر الخدمة المطلوبة...">Select Desired Service...</option>
+                <option value="web-dev"     data-en="Frontend Web Development"       data-ar="تطوير واجهات الويب">Frontend Web Development</option>
+                <option value="responsive"  data-en="Responsive Mobile Optimization" data-ar="تحسين الجوّال المتجاوب">Responsive Mobile Optimization</option>
+                <option value="ui-design"   data-en="UI/UX Design & Prototyping"     data-ar="تصميم UI/UX والنماذج الأولية">UI/UX Design &amp; Prototyping</option>
+                <option value="performance" data-en="Speed & SEO Optimization"       data-ar="تحسين السرعة وSEO">Speed &amp; SEO Optimization</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="form-message"
+                        data-placeholder-en="Briefly describe your project details and budget..."
+                        data-placeholder-ar="اشرح باختصار تفاصيل مشروعك وميزانيتك..."
+                        placeholder="Briefly describe your project details and budget..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit-btn" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span data-en="Send Message" data-ar="إرسال الرسالة">Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for Case Studies -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+        <span>Dana<span style="color: var(--accent-primary);">.dev</span></span>
+      </div>
+      <div class="footer-copy">
+        <span data-en="© 2026 Dana Smith. Built for" data-ar="© 2026 دانا سميث. مبني لـ">© 2026 Dana Smith. Built for</span>
+        <strong> Digital Egypt Pioneers Initiative (DEPI) Freelancing Track</strong>.
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top-btn" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
